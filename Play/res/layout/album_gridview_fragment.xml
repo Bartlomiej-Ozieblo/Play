@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.gagaryn.play.player_fragment.BackgroundView
+            android:id="@+id/album_gridview_fragment_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <GridView
+            android:id="@+id/album_gridview"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:scrollbars="none"
+            android:columnWidth="150dp"
+            android:stretchMode="columnWidth"
+            android:layout_marginTop="48dp"
+            android:layout_centerInParent="true"
+            android:padding="20dp"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+</RelativeLayout>

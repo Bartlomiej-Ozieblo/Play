@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.gagaryn.play.player_fragment.CDAlbumThumbnailView
+            android:id="@+id/player_thumbnail_view"
+            android:layout_alignParentTop="true"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+    <com.gagaryn.play.player_fragment.HoloCircularProgressBar
+            android:id="@+id/player_circular_progress_bar"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            stroke_width="10dp"
+            progress_color="@android:color/holo_blue_bright"
+            android:layout_marginTop="48dp"
+            progress_background_color="0xff424242"
+            android:gravity="top"
+            marker_visible="false"
+            thumb_visible="false"/>
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+            <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/player_current_progress_label"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#DAD8D4"
+                    android:text="0:00"/>
+
+            <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/player_end_progress_label"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#DAD8D4"
+                    android:text="6:34"/>
+
+        </RelativeLayout>
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="#DAD8D4"
+                android:id="@+id/player_artist_label"
+                android:text="Some artist feat Pitbull"/>
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#DAD8D4"
+                android:id="@+id/player_title_label"
+                android:text="Song title"/>
+
+        <SeekBar
+                android:id="@+id/player_seekbar"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+            <ImageButton
+                    android:id="@+id/player_repeat_button"
+                    android:alpha="1"
+                    android:src="@drawable/av_repeat"
+                    android:background="@null"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+            <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/av_previous"
+                    android:background="@null"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:alpha="1"
+                    android:id="@+id/player_back_button"/>
+
+            <ImageButton
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/av_play"
+                    android:background="@null"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:alpha="1"
+                    android:id="@+id/player_play_button"/>
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/av_next"
+                    android:background="@null"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:alpha="1"
+                    android:id="@+id/player_next_button"/>
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/av_shuffle"
+                    android:background="@null"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:alpha="1"
+                    android:id="@+id/player_shuffle_button"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
