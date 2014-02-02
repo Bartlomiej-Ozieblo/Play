@@ -7,6 +7,7 @@ My first application for Android. It's just simple music player, capable of play
 <p>
   <center>
     <img src="http://img33.imageshack.us/img33/9809/jtjk.png" height="350" align="center" />
+    <img src="http://imageshack.com/a/img201/8718/f8c.png" height="350" align="center" />
     <img src="http://img36.imageshack.us/img36/7346/qtq.png" height="350" align="center" />
     <img src="http://img109.imageshack.us/img109/5919/bssa.png" height="350" align="center" />
   </center>
