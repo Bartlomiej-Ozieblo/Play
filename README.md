@@ -24,8 +24,5 @@ HoloCircularProgressBar released under Apache License, by Pascal Welsch
 <br />
 https://github.com/passsy/android-HoloCircularProgressBar
 
-##Bugs
-The main bug is memory leak, caused probably by mechanism that update progress bar. I don't know how to repair this, if you can give me any hint I'll be grateful. :) <br />And also equalizer is not finished (or even started).
-
 ##Notes
 Software was tested on Samsung Galaxy S3. I don't know if layout will look properly on other devices.
